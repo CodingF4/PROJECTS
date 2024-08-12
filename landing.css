@@ -1,0 +1,259 @@
+body {
+  height: 2800px;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: white;
+  border-bottom: 1px solid rgb(228, 228, 228);
+  transition: background-color 0.9s ease, color 0.9s ease;
+}
+
+header:hover {
+  background-color: black;
+  color: white;
+}
+
+header:hover ul li a {
+  color: white;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  z-index: 999;
+}
+
+.left-side {
+  width: 400px;
+  justify-content: space-around;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline-block;
+  position: relative;
+}
+
+.navbar li a {
+  color: black;
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+
+  transition: text-decoration 0.3s ease;
+}
+
+.navbar li a:hover {
+  text-decoration: underline;
+}
+
+/* Dropdown CSS */
+
+.navbar ul ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  background-color: black;
+  z-index: 9999; /* Ensures it is above other elements */
+  border: 1px;
+}
+
+.navbar ul ul li {
+  display: block;
+}
+
+.navbar li:hover ul {
+  display: block;
+}
+
+/* Change the background color of dropdown links on hover */
+.navbar ul ul li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+.middle-section,
+.right-side {
+  display: flex;
+  justify-content: space-around;
+  width: 300px;
+}
+
+.navbar {
+  margin-left: 15px;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: Didot;
+}
+
+.right-side {
+  margin-right: 20px;
+}
+
+.search-icon,
+.shopping-bag {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.search-icon svg,
+.shopping-bag svg {
+  width: 20px;
+  height: 20px;
+  transition: color 0.3s ease;
+}
+
+.search-icon:hover svg,
+.shopping-bag:hover svg {
+  color: gray;
+}
+
+.logo {
+  margin-top: 100px;
+  width: 50%;
+  height: 5%;
+  text-align: center;
+}
+
+.main-image {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  margin-top: 90px;
+}
+
+.main-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+}
+
+.collection {
+  margin-top: 100px;
+  text-align: center;
+  margin-left: 77px;
+}
+
+.collection-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.collection-section .clothes {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.collection-section .clothes:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  height: 500px;
+  width: 100%;
+}
+
+.email {
+  margin-left: 650px;
+  margin-top: 100px;
+  padding-left: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 150px;
+
+  border: none;
+  border-radius: 2px;
+}
+
+.subscribe-button {
+  cursor: pointer;
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-left: 10px;
+
+  background-color: gray;
+  color: white;
+  font-size: 11px;
+  border: none;
+  border-radius: 0px;
+
+  transition: background-color 0.5s ease;
+}
+
+.subscribe-button:hover {
+  background-color: rgb(68, 68, 68);
+}
+
+.command {
+  margin-left: 730px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.nice {
+  margin-left: 790px;
+  margin-top: 30px;
+}
+
+h2 {
+  font-size: 40px;
+  margin-left: 690px;
+}
+
+h2:hover {
+  cursor: pointer;
+}
+
+.policy-terms {
+  margin-left: 700px;
+  margin-top: 40px;
+}
+
+.policy-one,
+.policy-two {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.copyright-container {
+  display: block;
+  margin-left: 740px;
+  margin-top: 50px;
+}
