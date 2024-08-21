@@ -4,6 +4,7 @@
   background-color: white;
   justify-content: space-between;
   padding-bottom: 20px;
+  width: 100%;
 }
 
 .tab-options {
@@ -17,4 +18,14 @@
   padding-right: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.tab-options:hover {
+  cursor: pointer;
+  background-color: rgb(83, 83, 83);
+}
+
+.tab-options:active {
+  background-color: white;
+  color: black;
 }

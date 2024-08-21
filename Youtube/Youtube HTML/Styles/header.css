@@ -118,6 +118,14 @@
   white-space: nowrap;
 }
 
+.search-button:hover,
+.voice-search-button:hover,
+.upload-icon-container:hover,
+.youtube-apps-icon-container:hover,
+.notifications-icon-container:hover {
+  cursor: pointer;
+}
+
 .search-button:hover .tooltip,
 .voice-search-button:hover .tooltip,
 .upload-icon-container:hover .tooltip,
@@ -166,6 +174,10 @@
 .current-user-picture {
   height: 32px;
   border-radius: 16px;
+}
+
+.current-user-picture:hover {
+  cursor: pointer;
 }
 
 .notifications-icon-container {
